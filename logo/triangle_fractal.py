@@ -9,7 +9,7 @@ def tri(scale):
 def gradientmove(distance,
                  r1, g1, b1, a1, 
                  r2, g2, b2, a2,
-                 step=1):
+                 step=10):
   for i in range(0, distance, step):
     j = distance - i
     col = ("rgba("
