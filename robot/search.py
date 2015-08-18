@@ -12,7 +12,7 @@ from random import *
 while True:
   move()
   
-  chance = randint(0, 24 - smell())
+  chance = randint(0, 5 - smell())
   print(chance)
   if chance != 0:
     t = randint(-1, 2)
