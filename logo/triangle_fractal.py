@@ -1,5 +1,4 @@
 from tealight.logo import move, turn, color
-import threading
 
 def tri(scale):
   for i in range(3):
@@ -15,10 +14,7 @@ def trifrac(level, scale):
   for i in range(3):
     move(scale)
     turn(120)
-    
-    t = threading.Thread(target=trifrac,
-                         arg=[level - 1, scale/2])
-    t.start()
+    trifrac(level - 1, scale/2)
 
 color("white")
 move(-250)
