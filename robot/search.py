@@ -14,4 +14,5 @@ while True:
   print(chance)
   if chance != 0:
     t = randint(-1, 2)
+    #print(t)
     turn(t)
