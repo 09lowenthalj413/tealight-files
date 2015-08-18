@@ -7,10 +7,11 @@ from tealight.robot import (move,
                             right_side)
 from random import *
 
+print(smell)
+
 last = smell()
 while True:
   move()
-  print(type(smell()))
   if last > smell():
     turn(randint(-2, 2))
 
