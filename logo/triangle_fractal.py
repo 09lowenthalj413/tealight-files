@@ -6,5 +6,5 @@ def tri(scale):
     turn(120)
     
 
-for i in range(-10, 0):
+for i in range(-3, 0):
   tri(2**(-i))
