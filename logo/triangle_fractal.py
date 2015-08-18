@@ -10,12 +10,11 @@ def trifrac(level, scale):
   if level == 0:
     return
   
-  s = level * scale
-  tri(s)
+  tri(scale)
   for i in range(3):
-    move(s)
+    move(scale)
     turn(120)
-    trifrac(level-1, scale)
+    trifrac(level - 1, scale/2)
 
 turn(-90)
 trifrac(5, 100)
