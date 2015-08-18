@@ -6,10 +6,30 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-
-while True:
-  #while touch() == "fruit":
-  #  move()
+def tree():
+  count = 0
+  while touch() == "fruit":
+    move()
+    count += 1
+   
+  turn(-1)
+  if touch() == "fruit":
+    tree()
     
-  if True and True:
-    print("yes")
+  turn(2)
+  if touch() == "fruit":
+    tree()
+    
+  turn(1)
+  for i in range(count):
+    move()
+    
+  turn(2)
+  
+tree()
+    
+  
+    
+  
+   
+  
