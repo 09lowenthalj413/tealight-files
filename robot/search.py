@@ -12,5 +12,6 @@ while True:
   move()
   if last > smell():
     turn(randint(-2, 2))
+  last = smell()
 
 # map seen 'no fruit' sight lines
