@@ -5,4 +5,5 @@ def tri(scale):
     move(scale)
     turn(120)
     
-tri(12)
+for i in range(10, 0):
+  tri(2**i)
