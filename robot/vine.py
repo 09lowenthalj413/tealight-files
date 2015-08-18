@@ -8,8 +8,8 @@ from tealight.robot import (move,
 
 
 while True:
-  while touch() == "fruit":
-    move()
+  #while touch() == "fruit":
+  #  move()
     
   if True and True:
     print("yes")
