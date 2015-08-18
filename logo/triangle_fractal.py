@@ -13,7 +13,7 @@ def trifrac(scale):
   tri(scale)
   for i in range(1):
     move(scale)
-    turn(-120)
+    turn(120)
     trifrac(scale/2)
     
 trifrac(100)
