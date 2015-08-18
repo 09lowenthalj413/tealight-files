@@ -10,6 +10,7 @@ from random import *
 last = smell()
 while True:
   move()
+  print(smell())
   if last > smell():
     turn(randint(-2, 2))
 
