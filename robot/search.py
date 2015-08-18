@@ -5,11 +5,12 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
+from random import *
 
 # This is a fairly useless algorithm!
 
 while True:
   move()
-  
-  if touch() == "wall":
-    turn(2)
+  #turn(-1 to 2)
+  if randint(0, 24 - smell()) != 0:
+    turn(randint(-1, 2))
