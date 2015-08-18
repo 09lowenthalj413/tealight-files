@@ -16,5 +16,7 @@ while True:
   print(chance)
   if chance != 0:
     t = randint(-1, 2)
-    print(t)
+    #print(t)
     turn(t)
+  else:
+    print("THis actually happens!?")
