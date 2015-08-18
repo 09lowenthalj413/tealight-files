@@ -12,9 +12,9 @@ from random import *
 while True:
   move()
   
-  chance = randint(0, 5 - smell())
-  print(chance)
-  if chance != 0:
+  #chance = randint(0, 5 - smell())
+  #print(chance)
+  if smell < 5:
     t = randint(-1, 2)
     #print(t)
     turn(t)
