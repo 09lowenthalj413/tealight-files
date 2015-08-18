@@ -7,7 +7,11 @@ def tri(scale):
     
 
 def trifrac(scale):
+  if(scale == 1) return
+
   tri(scale)
   for i in range(4):
     trifrac(scale/2)
     move(scale/2)
+    
+trifrac(100)
