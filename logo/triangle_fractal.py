@@ -7,7 +7,7 @@ def tri(scale):
     
 
 def trifrac(level, scale):
-  if level == 1:
+  if level == 0:
     return
   
   s = level * scale
