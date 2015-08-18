@@ -6,5 +6,8 @@ def tri(scale):
     turn(120)
     
 
-for i in range(-3, 0):
-  tri((2**(-i)) * 10)
+def trifrac(scale):
+  tri(scale)
+  for i in range(4):
+    trifrac(scale/2)
+    move(scale/2)
