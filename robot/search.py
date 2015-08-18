@@ -7,33 +7,10 @@ from tealight.robot import (move,
                             right_side)
 from random import *
 
-#last = smell()
-#while True:
-#  move()
-#  if last < smell()
-
+last = smell()
 while True:
-  if touch() == "wall":
-    turn(2)
-  
-  if touch() == "fruit":
-    move()
-    continue
-  
-  if left_side() == "fruit":
-    turn(-1)
-    move()
-    continue
-   
-  if right_side() == "fruit":
-    turn(1)
-    move()
-    continue
-  
-  for i in range(4):
-    if look() == "fruit":
-      move()
-      break
-    else:
-      turn(1)
   move()
+  if last > smell():
+    turn(randint(-2, 2))
+
+# map seen 'no fruit' sight lines
