@@ -1,10 +1,6 @@
 from tealight.robot import (move, 
-                            turn, 
-                            look, 
-                            touch, 
-                            smell, 
-                            left_side, 
-                            right_side)
+                            turn,
+                            touch)
 
 def tree():
   count = 0
