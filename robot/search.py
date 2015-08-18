@@ -16,15 +16,15 @@ while True:
   if touch() == "wall":
     turn(2)
     
-  if left_side() == "fruit":
-    turn(-1)
-    move()
-    continue
+  #if left_side() == "fruit":
+  #  turn(-1)
+  #  move()
+  #  continue
     
-  if right_side() == "fruit":
-    turn(1)
-    move()
-    continue
+  #if right_side() == "fruit":
+  #  turn(1)
+  #  move()
+  #  continue
   
   for i in range(4):
     if look() == "fruit":
