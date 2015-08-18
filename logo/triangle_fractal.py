@@ -15,7 +15,6 @@ def trifrac(scale):
     move(scale)
     turn(120)
     trifrac(scale/2)
-    sleep(10)
 
-
+turn(90)
 trifrac(100)
