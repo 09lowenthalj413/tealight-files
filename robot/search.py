@@ -13,6 +13,9 @@ from random import *
 #  if last < smell()
 
 while True:
+  if touch() == "wall":
+    turn(2)
+  
   for i in range(4):
     if look() == "fruit":
       move()
