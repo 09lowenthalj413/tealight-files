@@ -10,7 +10,7 @@ def trifrac(scale):
   if scale == 1:
     return
 
-  tri(scale)
+  tri(scale*10)
   for i in range(3):
     move(scale)
     turn(120)
