@@ -7,7 +7,8 @@ def tri(scale):
     
 
 def trifrac(scale):
-  if scale == 1 return
+  if scale == 1:
+    return
 
   tri(scale)
   for i in range(4):
