@@ -31,12 +31,7 @@ def trifrac(level, scale):
     turn(120)
     trifrac(level - 1, scale/2)
 
-gradientmove(400,
-             255, 0, 0, 255,
-             255, 0, 255, 255,
-             1)
 
-"""
 color("white")
 move(-250)
 turn(-90)
@@ -44,4 +39,3 @@ move(-250)
 
 color("blue")
 trifrac(10, 500)
-"""
