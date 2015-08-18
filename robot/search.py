@@ -11,7 +11,10 @@ from random import *
 
 while True:
   move()
-  #if randint(0, 24 - smell()) != 0:
-  #  turn(randint(-1, 2))
   
-  turn(randint(-1, 2))
+  chance = randint(0, 24 - smell())
+  print(chance)
+  if chance != 0:
+    t = randint(-1, 2)
+    print(t)
+    turn(t)
