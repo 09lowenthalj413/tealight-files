@@ -38,7 +38,7 @@ move(-250)
 turn(-90)
 move(-250)
 
-gradientmove(100, 0, 0, 0, 0, 255, 255, 255, 0)
+gradientmove(1000, 0, 0, 0, 0, 255, 255, 255, 0)
 
 #color("blue")
 #trifrac(10, 500)
