@@ -13,10 +13,10 @@ def gradientmove(distance,
   for i in range(0, distance, step):
     j = distance - i
     col = ("rgba(%d, %d, %d, %d" %
-           [(r1*j + r2*i)/distance,
+           ((r1*j + r2*i)/distance,
             (g1*j + g2*i)/distance,
             (b1*j + b2*i)/distance,
-            (a1*j + a2*i)/distance])
+            (a1*j + a2*i)/distance))
     
     color(col)
     move(step)
