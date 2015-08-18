@@ -9,3 +9,5 @@ from tealight.robot import (move,
 while True:
   while touch() == "fruit":
     move()
+    
+  turn(1)
