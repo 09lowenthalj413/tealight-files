@@ -12,9 +12,9 @@ def trifrac(level, scale):
   
   tri(scale)
   for i in range(3):
+    trifrac(level - 1, scale/2)
     move(scale)
     turn(120)
-    trifrac(level - 1, scale/2)
 
 color("white")
 move(-250)
