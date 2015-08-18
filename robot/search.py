@@ -7,14 +7,12 @@ from tealight.robot import (move,
                             right_side)
 from random import *
 
-# This is a fairly useless algorithm!
-
 while True:
   move()
   
-  #chance = randint(0, 5 - smell())
-  #print(chance)
-  if smell < 5:
+  chance = randint(0, 25 - smell())
+  print(chance)
+  if chance != 0:
     t = randint(-1, 2)
     #print(t)
     turn(t)
