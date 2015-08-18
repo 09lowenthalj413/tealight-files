@@ -15,7 +15,11 @@ from random import *
 while True:
   if touch() == "wall":
     turn(2)
-    
+  
+  if touch() == "fruit":
+    move()
+    continue
+  
   if left_side() == "fruit":
     turn(-1)
     move()
@@ -26,10 +30,10 @@ while True:
     move()
     continue
   
-  for i in range(4):
-    if look() == "fruit":
-      move()
-      break
-    else:
-      turn(1)
-  move()
+  #for i in range(4):
+  #  if look() == "fruit":
+  #    move()
+  #    break
+  #  else:
+  #    turn(1)
+  #move()
