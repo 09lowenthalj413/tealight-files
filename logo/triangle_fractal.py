@@ -10,7 +10,7 @@ def gradientmove(distance,
                  r1, g1, b1, a1, 
                  r2, g2, b2, a2,
                  step=1):
-  for i in range(1, distance, step):
+  for i in range(0, distance, step):
     j = distance - i
     col = ("rgba("
           + str((r1*j + r2*i)/distance) + ","
