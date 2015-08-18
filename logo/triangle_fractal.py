@@ -15,5 +15,6 @@ def trifrac(scale):
     move(scale)
     turn(120)
     trifrac(scale/2)
-    
+
+turn(-60)
 trifrac(100)
