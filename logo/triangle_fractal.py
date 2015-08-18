@@ -16,7 +16,7 @@ def gradientmove(distance,
            [(r1*j + r2*i)/distance,
             (g1*j + g2*i)/distance,
             (b1*j + b2*i)/distance,
-            (a1*j + a2*i)/distance)])
+            (a1*j + a2*i)/distance])
     
     color(col)
     move(step)
