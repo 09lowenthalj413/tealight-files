@@ -19,8 +19,6 @@ def gradientmove(distance,
           + str((a1*j + a2*i)/distance) + ")")
     
     color(col)
-    print(col)
-    
     move(step)
   
 def trifrac(level, scale):
