@@ -13,7 +13,7 @@ from random import *
 #  if last < smell()
 
 while True:
-  if look() == "fruit":
-    move()
-  else:
-    turn(randint(-1, 2))
+  for i in range(4):
+    if look():
+      move()
+      break
