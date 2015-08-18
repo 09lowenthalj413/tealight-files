@@ -15,6 +15,11 @@ from random import *
 while True:
   if touch() == "wall":
     turn(2)
+    
+  for i in range(4):
+    if touch() == "fruit":
+      move()
+      break
   
   for i in range(4):
     if look() == "fruit":
