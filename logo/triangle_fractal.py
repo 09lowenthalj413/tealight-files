@@ -6,15 +6,16 @@ def tri(scale):
     turn(120)
     
 
-def trifrac(scale):
-  if scale == 1:
+def trifrac(level):
+  if level == 1:
     return
   
-  tri(scale*2)
+  scale = level * 2
+  tri(scale)
   for i in range(3):
-    move(scale*2)
+    move(scale)
     turn(120)
-    trifrac(scale*2/2)
+    trifrac(scale/2)
 
 turn(-90)
 trifrac(10)
