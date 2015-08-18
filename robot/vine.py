@@ -7,6 +7,5 @@ from tealight.robot import (move,
                             right_side)
 
 while True:
-  while touch() != None:
-    print touch ()
+  while touch() == "fruit":
     move()
