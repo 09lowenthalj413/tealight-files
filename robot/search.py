@@ -14,6 +14,6 @@ from random import *
 
 while True:
   for i in range(4):
-    if look():
+    if look() == "fruit":
       move()
       break
