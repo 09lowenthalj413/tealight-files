@@ -9,6 +9,9 @@ from random import *
 
 last = int(smell())
 while True:
+  if touch() == "wall":
+    turn(2)
+  
   move()
   if last > int(smell()):
     turn(randint(-2, 2))
