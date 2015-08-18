@@ -22,4 +22,4 @@ turn(-90)
 move(-250)
 
 color("blue")
-trifrac(4, 500)
+trifrac(10, 500)
