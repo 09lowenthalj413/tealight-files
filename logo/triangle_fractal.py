@@ -15,7 +15,7 @@ def trifrac(level, scale):
   for i in range(3):
     move(scale)
     turn(120)
-    trifrac(scale/2)
+    trifrac(level-1, scale/2)
 
 turn(-90)
 trifrac(2, 10)
