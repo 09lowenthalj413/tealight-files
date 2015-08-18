@@ -6,8 +6,10 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
+
 while True:
   while touch() == "fruit":
     move()
     
-  turn(1)
+  if True and True:
+    print("yes")
