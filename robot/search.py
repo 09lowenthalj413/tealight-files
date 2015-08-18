@@ -19,12 +19,12 @@ while True:
   if left_side() == "fruit":
     turn(-1)
     move()
-    break
+    continue
     
   if right_side() == "fruit":
     turn(1)
     move()
-    break
+    continue
   
   for i in range(4):
     if look() == "fruit":
