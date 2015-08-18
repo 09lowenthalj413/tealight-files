@@ -8,4 +8,5 @@ from tealight.robot import (move,
 
 while True:
   while touch() != None:
+    print touch ()
     move()
