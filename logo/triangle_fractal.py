@@ -6,7 +6,7 @@ def tri(scale):
     turn(120)
     
 
-def trifrac(level):
+def trifrac(level, scale):
   if level == 1:
     return
   
@@ -18,4 +18,4 @@ def trifrac(level):
     trifrac(scale/2)
 
 turn(-90)
-trifrac(100)
+trifrac(1, 100)
