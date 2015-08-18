@@ -18,4 +18,4 @@ def trifrac(level, scale):
     trifrac(level-1, scale)
 
 turn(-90)
-trifrac(2, 100)
+trifrac(3, 100)
