@@ -1,4 +1,4 @@
-from tealight.logo import move, turn
+from tealight.logo import move, turn, color
 
 def tri(scale):
   for i in range(3):
@@ -16,7 +16,10 @@ def trifrac(level, scale):
     turn(120)
     trifrac(level - 1, scale/2)
 
+color("white")
 move(-250)
 turn(-90)
 move(-250)
+
+color("blue")
 trifrac(4, 500)
