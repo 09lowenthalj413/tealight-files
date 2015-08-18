@@ -8,11 +8,10 @@ from tealight.robot import (move,
 from random import *
 
 last = int(smell())
-print(type(last))
 while True:
   move()
-  if last > smell():
+  if last > int(smell()):
     turn(randint(-2, 2))
-  last = smell()
+  last = int(smell())
 
 # map seen 'no fruit' sight lines
