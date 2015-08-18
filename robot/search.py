@@ -30,10 +30,10 @@ while True:
     move()
     continue
   
-  #for i in range(4):
-  #  if look() == "fruit":
-  #    move()
-  #    break
-  #  else:
-  #    turn(1)
+  for i in range(4):
+    if look() == "fruit":
+      move()
+      break
+    else:
+      turn(1)
   move()
