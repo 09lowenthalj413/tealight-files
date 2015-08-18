@@ -7,7 +7,7 @@ from tealight.robot import (move,
                             right_side)
 from random import *
 
-print(smell)
+print(smell())
 
 last = smell()
 while True:
