@@ -7,4 +7,4 @@ def tri(scale):
     
 
 for i in range(-3, 0):
-  tri(2**(-i))
+  tri((2**(-i)) * 10)
