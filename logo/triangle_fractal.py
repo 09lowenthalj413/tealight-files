@@ -10,7 +10,7 @@ def trifrac(level, scale):
   if level == 1:
     return
   
-  scale = level * 2
+  scale = level * scale
   tri(scale)
   for i in range(3):
     move(scale)
