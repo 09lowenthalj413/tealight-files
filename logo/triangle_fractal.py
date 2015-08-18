@@ -11,7 +11,7 @@ def trifrac(scale):
     return
 
   tri(scale)
-  for i in range(4):
+  for i in range(1):
     move(scale)
     turn(-120)
     trifrac(scale/2)
