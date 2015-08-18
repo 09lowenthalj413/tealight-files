@@ -19,3 +19,4 @@ while True:
       break
     else:
       turn(1)
+  move()
