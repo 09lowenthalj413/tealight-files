@@ -8,7 +8,7 @@ from tealight.robot import (move,
 from random import *
 
 last = smell()
-print(last)
+print(type(last))
 while True:
   move()
   if last > smell():
