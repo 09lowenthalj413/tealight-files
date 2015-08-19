@@ -7,8 +7,8 @@ def handle_mousemove(x, y, button):
   spot(300, 200, 49)
   
   color("black")
-  spot(300 + (x - 300) / 10,
-       200 + (y - 200) / 10,
+  spot(300 + (x - 300) / 20,
+       200 + (y - 200) / 20,
        30)
   
 
