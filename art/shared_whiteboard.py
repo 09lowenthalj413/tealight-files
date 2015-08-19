@@ -27,7 +27,8 @@ def handle_message(message):
   line(message["x1"], message["y1"], message["x2"], message["y2"])
   
 def handle_keydown(key):
+  max_xy = 1000
   if key == "right":
-    for x in range(100):
-      line(x, 0, x, 100)
-      send({"x1": x, "y1": 0, "x2": x, "y2": 100})
+    for x in range(max_xy):
+      line(x, 0, x, max_xy)
+      send({"x1": x, "y1": 0, "x2": x, "y2": max_xy})
