@@ -16,8 +16,10 @@ def handle_mousemove(x,y,button):
   
   if button == "left":
     line(lastx, lasty, x, y)
-    lastx = x
-    lasty = y
   elif button == "right":
-    line(lastx, lasty, 
+    line(lastx, lasty, x, y)
+  else:
+    return
   
+  lastx = x
+  lasty = y
