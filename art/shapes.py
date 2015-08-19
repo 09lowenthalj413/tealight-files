@@ -7,11 +7,10 @@ def handle_mousemove(x, y, button):
   spot(300, 200, 49)
   
   color("black")
-  spot(300 + (x - 300) / 15,
-       200 + (y - 200) / 15,
-       30)
   
-
-spot(280,200,30)
+  newx = 300 + (x - 300) / 15
+  newy = 200 + (y - 200) /15
+  spot(newx, newy, 20)
+  
 circle(300,200,50)
 box(250,250,100,100)
