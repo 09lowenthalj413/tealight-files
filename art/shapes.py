@@ -13,7 +13,7 @@ def handle_mousemove(x, y, button):
   
   ox = (ox + 20) % 40
   
-  spot(300 + newx, 200 + newy, 20)
+  spot(300 + ox, 200 + oy, 20)
   
 circle(300,200,50)
 box(250,250,100,100)
