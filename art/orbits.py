@@ -6,6 +6,7 @@ x = screen_width / 2
 y = screen_height / 2
 vx = 0
 vy = 0
+m = 1
 
 power = 0.3
 
@@ -13,13 +14,13 @@ def handle_keydown(key):
   global vx, vy
   
   if key == "left":
-    vx -= power
+    vx -= power / m
   elif key == "right":
-    vx += power
+    vx += power / m
   elif key == "up":
-    vy -= power
+    vy -= power / m
   elif key == "down":
-    vy += power
+    vy += power / m
     
 def handle_frame():
   global x,y,vx,vy
@@ -41,6 +42,9 @@ def handle_frame():
     # apply inverse square rule
     rx *= 1/magsq
     ry *= 1/magsq
+    
+    vx += rx / m
+    vy += ry / m
   
   x = x + vx
   y = y + vy
