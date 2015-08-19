@@ -29,4 +29,5 @@ def handle_message(message):
 def handle_keydown(key):
   if key == "right":
     for x in range(100):
+      line(x, 0, x, 100)
       send({"x1": x, "y1": 0, "x2": x, "y2": 100})
