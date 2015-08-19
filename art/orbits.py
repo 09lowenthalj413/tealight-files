@@ -17,11 +17,11 @@ def drawship(x, y, angle):
   c = cos(angle)
   s = sin(angle)
   for i in range(0, 2):
+    print(i)
     x = tri[i][0]
     y = tri[i][1]
     tri[i] = (x*c - y*s, x*s + y*c)
   
-  print(tri)
   for i in range(0, 2):
     x0 = tri[i][0]
     y0 = tri[i][1]
