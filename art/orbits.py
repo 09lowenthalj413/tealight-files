@@ -1,6 +1,6 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import screen_width, screen_height
-from math import sqrt
+from math import sqrt, cos, sin
 
 x = screen_width / 2 - 100
 y = screen_height / 2
@@ -10,6 +10,16 @@ m = 1
 g = 981
 
 power = 0.4
+
+def drawship(x, y, angle):
+  tri = [(0, 10), (5, -5), (-5, -5)]
+  
+  c = cos(angle)
+  s = sin(angle)
+  for i in range(0, 2):
+    x = tri[i][0]
+    y = tri[i][1]
+    tri[i] = (x*c - y*s, x*s + y*c)
 
 def handle_keydown(key):
   global vx, vy
