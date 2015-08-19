@@ -12,7 +12,6 @@ power = 0.3
 def handle_keydown(key):
   global vx, vy
   
-
   if key == "left":
     vx -= power
   elif key == "right":
@@ -26,7 +25,9 @@ def handle_frame():
   global x,y,vx,vy
   
   color("white")
-  spot(x,y,8)  
+  spot(x,y,8)
+  
+  vy += 9.81
   
   x = x + vx
   y = y + vy
