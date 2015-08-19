@@ -5,7 +5,7 @@ from math import sqrt
 x = screen_width / 2 - 100
 y = screen_height / 2
 vx = 0
-vy = 0
+vy = 10
 m = 1
 g = 9.81
 
