@@ -14,13 +14,13 @@ def handle_keydown(key):
   
 
   if key == "left":
-    vx = -power
+    vx -= power
   elif key == "right":
-    vx = power
+    vx += power
   elif key == "up":
-    vy = -power
+    vy -= power
   elif key == "down":
-    vy = power
+    vy += power
     
 def handle_frame():
   global x,y,vx,vy
