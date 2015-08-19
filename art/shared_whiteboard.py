@@ -8,6 +8,12 @@ lasty = 0
 color("blue")
 connect("shared_whiteboard")
 
+def fill(colour):
+  color(colour)
+  for x in range(screen_width):
+    line(x, 0, x, screen_height)
+    send({"x1": x, "y1": 0, "x2": x, "y2": screen_height})
+
 def handle_mousedown(x,y):
   global lastx, lasty
   
@@ -28,6 +34,4 @@ def handle_message(message):
   
 def handle_keydown(key):
   if key == "right":
-    for x in range(screen_width):
-      line(x, 0, x, screen_height)
-      send({"x1": x, "y1": 0, "x2": x, "y2": screen_height})
+    fill("black")
