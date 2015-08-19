@@ -7,6 +7,7 @@ y = screen_height / 2
 vx = 0
 vy = 0
 m = 1
+g = 9.81
 
 power = 0.3
 
@@ -40,8 +41,8 @@ def handle_frame():
     ry /= mag
     
     # apply inverse square rule
-    rx *= 1/magsq
-    ry *= 1/magsq
+    rx *= g/magsq
+    ry *= g/magsq
     
     vx += rx / m
     vy += ry / m
