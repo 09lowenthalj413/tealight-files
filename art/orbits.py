@@ -9,7 +9,7 @@ vy = 1
 m = 1
 g = 981
 
-power = 0.5
+power = 10000
 
 def handle_keydown(key):
   global vx, vy
