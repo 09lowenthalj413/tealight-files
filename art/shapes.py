@@ -6,7 +6,7 @@ def handle_mousemove(x, y, button):
   ox = (x - 300) / 15
   oy = (y - 200) / 15
   
-  if ox**2 + oy**2 > (50-10)**2:
+  if ox**2 + oy**2 > (50-20)**2:
     return
   
   color("white")
