@@ -8,9 +8,12 @@ def handle_mousemove(x, y, button):
   
   color("black")
   
-  newx = 300 + (x - 300) / 15
-  newy = 200 + (y - 200) /15
-  spot(newx, newy, 20)
+  ox = (x - 300) / 15
+  oy = (y - 200) / 15
+  
+  ox = (ox + 20) % 40
+  
+  spot(300 + newx, 200 + newy, 20)
   
 circle(300,200,50)
 box(250,250,100,100)
