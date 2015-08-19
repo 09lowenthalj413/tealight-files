@@ -26,7 +26,7 @@ def drawship(x, y, angle):
     y0 = tri[i][1]
     x1 = tri[(i+1)%3][0]
     y1 = tri[(i+1)%3][1]
-    line(x0, y0, x1, y1)
+    line(x + x0, y + y0, x + x1, y + y1)
 
 def handle_keydown(key):
   global vx, vy
