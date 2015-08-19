@@ -6,8 +6,6 @@ x = screen_width / 2
 y = screen_height / 2
 vx = 0
 vy = 0
-ax = 0
-ay = 0
 
 power = 0.3
 
@@ -16,13 +14,13 @@ def handle_keydown(key):
   
 
   if key == "left":
-    ax = -power
+    vx = -power
   elif key == "right":
-    ax = power
+    vx = power
   elif key == "up":
-    ay = -power
+    vy = -power
   elif key == "down":
-    ay = power
+    vy = power
 
 def handle_keyup(key):
   global ax, ay
