@@ -33,7 +33,6 @@ def handle_frame():
   ry = y - screen_height / 2
   
   magsq = rx**2 + ry**2
-  
   if magsq != 0:
     # normalise
     mag = sqrt(magsq)
