@@ -3,17 +3,16 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 color("blue")
 
 def handle_mousemove(x, y, button):
-  color("white")
-  spot(300, 200, 49)
-  
-  color("black")
-  
   ox = (x - 300) / 15
   oy = (y - 200) / 15
   
   if ox**2 + oy**2 > (50-10)**2:
     return
   
+  color("white")
+  spot(300, 200, 49)
+  
+  color("black")
   spot(300 + ox, 200 + oy, 20)
   
 circle(300,200,50)
