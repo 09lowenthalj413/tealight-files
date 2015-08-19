@@ -13,6 +13,7 @@ def fill(colour):
   for x in range(screen_width):
     line(x, 0, x, screen_height)
     send({"x1": x, "y1": 0, "x2": x, "y2": screen_height})
+    return
 
 def handle_mousedown(x,y):
   global lastx, lasty
