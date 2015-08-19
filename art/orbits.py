@@ -60,6 +60,6 @@ def handle_frame():
   y = y + vy
   
   color("blue")
-  spot(x,y,8)
+  drawship(x, y, 0)
   
   
