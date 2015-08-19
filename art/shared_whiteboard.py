@@ -1,4 +1,4 @@
-from tealight.art import (color, line, spot, circle, box, image, text, background)
+from tealight.art import (color, line, spot, circle, box, image, text, background, screen_width, screen_height)
 
 from tealight.net import connect, send
 
@@ -27,8 +27,7 @@ def handle_message(message):
   line(message["x1"], message["y1"], message["x2"], message["y2"])
   
 def handle_keydown(key):
-  max_xy = 1000
   if key == "right":
-    for x in range(max_xy):
-      line(x, 0, x, max_xy)
-      send({"x1": x, "y1": 0, "x2": x, "y2": max_xy})
+    for x in range(screen_width):
+      line(x, 0, x, screen_height)
+      send({"x1": x, "y1": 0, "x2": x, "y2": screen_height})
