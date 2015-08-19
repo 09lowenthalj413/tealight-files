@@ -8,8 +8,8 @@ def handle_mousemove(x, y, button):
   
   if ox**2 + oy**2 > (50-20)**2:
     ratio = float(ox**2 + oy**2) / (50-20)**2
-    ox *= ratio
-    oy *= ratio
+    ox /= ratio
+    oy /= ratio
   
   color("white")
   spot(300, 200, 49)
