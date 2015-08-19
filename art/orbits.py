@@ -7,7 +7,7 @@ y = screen_height / 2
 vx = 0
 vy = 1
 m = 1
-g = 9.81
+g = 981
 
 power = 0.3
 
