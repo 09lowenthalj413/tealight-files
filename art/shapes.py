@@ -3,7 +3,10 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 color("blue")
 
 def handle_mousemove(x, y, button):
+  color("white")
   spot(300, 200, 29)
+  
+  color("black")
   spot(300 + (x - 300) / 100,
        200 + (y - 200) / 100,
        50)
