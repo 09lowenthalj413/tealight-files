@@ -26,13 +26,12 @@ def handle_frame():
   global x,y,vx,vy
   
   color("white")
-  
   spot(x,y,8)  
+  
   x = x + vx
   y = y + vy
   
   color("blue")
-  
   spot(x,y,8)
   
   
