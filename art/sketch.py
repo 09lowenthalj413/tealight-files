@@ -15,11 +15,12 @@ def handle_mousemove(x,y,button):
   global lastx, lasty
   
   if button == "left":
-    line(lastx, lasty, x, y)
+    color("red")
   elif button == "right":
-    line(lastx, lasty, x, y)
+    color("blue")
   else:
     return
   
+  line(lastx, lasty, x, y)
   lastx = x
   lasty = y
