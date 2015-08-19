@@ -32,16 +32,15 @@ def handle_frame():
   
   magsq = rx**2 + ry**2
   
-  # normalise
-  mag = sqrt(magsq)
-  if mag == 0:
-    mag = 1
-  rx /= mag
-  ry /= mag
-  
-  # apply inverse square rule
-  rx *= 1/magsq
-  ry *= 1/magsq
+  if magsq != 0:
+    # normalise
+    mag = sqrt(magsq)
+    rx /= mag
+    ry /= mag
+    
+    # apply inverse square rule
+    rx *= 1/magsq
+    ry *= 1/magsq
   
   x = x + vx
   y = y + vy
