@@ -17,7 +17,6 @@ def drawship(x, y, angle):
   c = cos(angle)
   s = sin(angle)
   for i in range(0, 3):
-    print(i)
     x = tri[i][0]
     y = tri[i][1]
     tri[i] = (x*c - y*s, x*s + y*c)
@@ -27,6 +26,7 @@ def drawship(x, y, angle):
     y0 = tri[i][1]
     x1 = tri[(i+1)%3][0]
     y1 = tri[(i+1)%3][1]
+    print(x + x0, y + y0, x + x1, y + y1)
     line(x + x0, y + y0, x + x1, y + y1)
 
 def handle_keydown(key):
