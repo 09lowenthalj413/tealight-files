@@ -11,15 +11,8 @@ def handle_mousemove(x, y, button):
   ox = (x - 300) / 15
   oy = (y - 200) / 15
   
-  if ox > 20:
-    ox = 20
-  elif ox < -20:
-    ox = -20
-  
-  if oy > 20:
-    oy = 20
-  elif oy < 20:
-    oy = 20
+  if ox**2 + oy**2 > 50**2:
+    return
   
   spot(300 + ox, 200 + oy, 20)
   
