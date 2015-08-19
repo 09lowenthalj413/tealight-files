@@ -27,7 +27,19 @@ def handle_frame():
   color("white")
   spot(x,y,8)
   
+  rx = x - screen_width / 2
+  ry = y - screen_height / 2
   
+  magsq = rx**2 + ry**2
+  
+  # normalise
+  mag = sqrt(magsq)
+  rx /= mag
+  ry /= mag
+  
+  # apply inverse square rule
+  rx *= 1/magsq
+  ry *= 1/magsq
   
   x = x + vx
   y = y + vy
