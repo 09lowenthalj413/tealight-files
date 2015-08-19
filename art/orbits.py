@@ -34,6 +34,8 @@ def handle_frame():
   
   # normalise
   mag = sqrt(magsq)
+  if mag == 0:
+    mag = 1
   rx /= mag
   ry /= mag
   
