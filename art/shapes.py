@@ -7,7 +7,9 @@ def handle_mousemove(x, y, button):
   oy = (y - 200) / 15
   
   if ox**2 + oy**2 > (50-20)**2:
-    return
+    ratio = float(ox**2 + oy**2) / (50-20)**2
+    ox /= ratio
+    oy /= ratio
   
   color("white")
   spot(300, 200, 49)
