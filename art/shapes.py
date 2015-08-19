@@ -4,7 +4,7 @@ color("blue")
 
 def handle_mousemove(x, y, button):
   color("white")
-  spot(300, 200, 29)
+  spot(300, 200, 49)
   
   color("black")
   spot(300 + (x - 300) / 100,
