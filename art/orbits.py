@@ -44,8 +44,8 @@ def handle_frame():
     rx *= g/magsq
     ry *= g/magsq
     
-    vx += rx / m
-    vy += ry / m
+    vx -= rx / m
+    vy -= ry / m
   
   x = x + vx
   y = y + vy
