@@ -1,1 +1,3 @@
-import github.dhs11.art.map
+from github.dhs11.art.map import *
+
+mapz()
