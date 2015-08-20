@@ -24,4 +24,5 @@ def handle_frame():
   color("red")
   
   for poly in mesh:
-    fill_polygon(poly)
+    if poly != []:
+      fill_polygon(poly)
