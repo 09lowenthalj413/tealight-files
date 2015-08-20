@@ -2,6 +2,8 @@ from tealight.art import *
 from math import *
 from random import *
 
+from github.dhs11.art.race_track import *
+
 def star(x, y, w, h, spines):
   angle = 0
   for i in range(0, spines):
