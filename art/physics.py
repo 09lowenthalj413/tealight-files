@@ -39,7 +39,7 @@ class Car:
       line(self.pos[0] + x0, self.pos[1] + y0,
            self.pos[0] + x1, self.pos[1] + y1)
   
-  def applyImpulse(self, x, y, a):
+  def applyImpulse(self, x, y, a=0):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
     self.avel += a
     
