@@ -29,6 +29,10 @@ class Car:
       
 car = Car()
 while True:
+  color("white")
+  box(0, 0, screen_width, screen_height)
+  
+  color("blue")
   car.draw()
   car.step()
 
