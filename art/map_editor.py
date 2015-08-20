@@ -5,7 +5,6 @@ index = 0
 mesh.append([])
 
 def handle_mousedown(x, y):
-  print(mesh)
   mesh[index].append((x, y))
   
 def handle_keydown(key):
