@@ -26,10 +26,7 @@ class Car:
     
     self.angle = (self.angle + 2 * pi) % (4 * pi) + (2 * pi)
     
-    res = [False, False, False]
-    for i in range(0, 3):
-      res[i] = self.track.check(self.pos[0] + self.mesh[i][0],
-                                self.pos[1] + self.mesh[i][1])
+    self.collide()
   
   def draw(self):
     color("red")
@@ -48,6 +45,9 @@ class Car:
   def applyImpulse(self, x, y, a=0):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
     self.avel += a
+    
+  def collide(self):
+    
     
   def __init__(self, racetrack):
     self.track = racetrack
