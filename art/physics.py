@@ -12,8 +12,12 @@ class Car:
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
     
+    res = []
     for i in range(0, 3):
-      self.track.check(self.mesh[i][0], self.mesh[i][1])
+      res[i] = self.track.check(self.mesh[i][0],
+                                self.mesh[i][1])
+      
+    print(res)
   
   def draw(self):
     s = sin(self.angle)
@@ -31,7 +35,7 @@ class Car:
   def applyImpulse(self, x, y):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
     
-  def __init__(racetrack):
+  def __init__(self, racetrack):
     self.track = racetrack
 
   
