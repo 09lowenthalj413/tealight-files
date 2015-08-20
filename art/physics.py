@@ -5,7 +5,7 @@ class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
   angle = 0
   pos = (100, 100)
-  vel = (0, 0)
+  vel = (10, 0)
   
   def step(self):
     self.pos = (self.pos[0] + self.vel[0],
