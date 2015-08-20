@@ -4,7 +4,7 @@ from math import *
 class Car:
   mesh = [(0, 50), (30, -20), (-30, -20)]
   angle = 0
-  pos = (0, 0)
+  pos = (100, 100)
   vel = (0, 0)
   
   def step(self):
