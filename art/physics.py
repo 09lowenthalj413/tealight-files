@@ -60,7 +60,7 @@ class Car:
       if (self.track.check(self.pos[0] + self.mesh[i][0],
                            self.pos[1] + self.mesh[i][1])):
         self.vel = (0, 0)
-        star(self.pos[0], self.pos[1], 100, 100, 32)
+        star(self.pos[0], self.pos[1], 50, 50, 32)
       
     
   def __init__(self, racetrack):
