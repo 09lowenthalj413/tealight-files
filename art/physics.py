@@ -47,10 +47,11 @@ class Car:
     self.avel += a
     
   def collide(self):
-    res = [False, False, False]
     for i in range(0, 3):
-      res[i] = self.track.check(self.pos[0] + self.mesh[i][0],
-                                self.pos[1] + self.mesh[i][1])
+      if (self.track.check(self.pos[0] + self.mesh[i][0],
+                           self.pos[1] + self.mesh[i][1])):
+        vel = (0,0)
+      
     
   def __init__(self, racetrack):
     self.track = racetrack
