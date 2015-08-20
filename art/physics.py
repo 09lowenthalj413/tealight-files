@@ -22,7 +22,7 @@ class Car:
   avel = 0
   aacc = 0
   
-  pos = (200, 200)
+  pos = (200, 250)
   vel = (0, 0)
   acc = (0, 0)
   
