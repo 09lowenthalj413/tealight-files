@@ -33,9 +33,6 @@ class Car:
   
   def draw(self):
     color("red")
-    
-    c = cos(self.angle)
-    s = sin(self.angle)
        
     for i in range(0, 3):
       a = rotate(self.mesh[i%3 - 1][0],
@@ -47,18 +44,6 @@ class Car:
       
       line(self.pos[0] + a[0], self.pos[1] + a[1],
            self.pos[0] + b[0], self.pos[1] + b[1])
-      
-      
-      x0 = (self.mesh[i%3 - 1][0] * c -
-            self.mesh[i%3 - 1][1] * s)
-      y0 = (self.mesh[i%3 - 1][0] * s +
-            self.mesh[i%3 - 1][1] * c)
-      x1 = (self.mesh[(i+1)%3 - 1][0] * c -
-            self.mesh[(i+1)%3 - 1][1] * s)
-      y1 = (self.mesh[(i+1)%3 - 1][0] * s +
-            self.mesh[(i+1)%3 - 1][1] * c)
-      
-      print("A:", a, x0, y0, "\nB:", b, x1, y1)
   
   def applyImpulse(self, x, y, a=0):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
