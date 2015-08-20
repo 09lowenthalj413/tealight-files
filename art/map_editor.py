@@ -1,6 +1,6 @@
 from tealight.art import *
 
-mesh = [[,]]
+mesh = [][]
 index = 0
 def handle_mousedown(x, y):
   mesh[index].append((x, y))
