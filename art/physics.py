@@ -35,6 +35,8 @@ while True:
   color("blue")
   car.draw()
   car.step()
+  
+  sleep(1)
 
 
   
