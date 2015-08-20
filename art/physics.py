@@ -19,6 +19,8 @@ class Car:
                 self.vel[1] * self.friction)
     self.avel = self.avel * self.friction
     
+    self.angle = (self.angle + 2 * pi) % (4 * pi) + (2 * pi)
+    
     res = [False, False, False]
     for i in range(0, 3):
       res[i] = self.track.check(self.pos[0] + self.mesh[i][0],
@@ -31,10 +33,14 @@ class Car:
     c = cos(self.angle)
     
     for i in range(0, 3):
-      x0 = self.mesh[i%3 - 1][0]
-      y0 = self.mesh[i%3 - 1][1]
-      x1 = self.mesh[(i+1)%3 - 1][0]
-      y1 = self.mesh[(i+1)%3 - 1][1]
+      x0 = (self.mesh[i%3 - 1][0] * c -
+            self.mesh[i%3 - 1][1] * s)
+      y0 = (self.mesh[i%3 - 1][0] * s +
+            self.mesh[i%3 - 1][1] * c)
+      x1 = (self.mesh[(i+1)%3 - 1][0] * c -
+            self.mesh[(i+1)%3 - 1][1] * s)
+      y1 = (self.mesh[(i+1)%3 - 1][0] * s +
+            self.mesh[(i+1)%3 - 1][1] * c)
       
       line(self.pos[0] + x0, self.pos[1] + y0,
            self.pos[0] + x1, self.pos[1] + y1)
