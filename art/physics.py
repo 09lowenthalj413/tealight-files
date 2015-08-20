@@ -1,3 +1,3 @@
 from tealight.art import *
 
-background("animals/tiger.png")
+background("animals/Tiger.png")
