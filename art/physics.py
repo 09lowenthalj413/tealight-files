@@ -4,7 +4,7 @@ from math import *
 def rotate(x, y, theta):
   c = cos(theta)
   s = sin(theta)
-  return (x*c - y*s, x*s, + y*c)
+  return (x*c - y*s, x*s + y*c)
 
 class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
