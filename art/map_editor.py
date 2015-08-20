@@ -16,6 +16,7 @@ def handle_mousedown(x, y):
   fill_polygon(mesh[index])
   
 def handle_keydown(key):
+  global index
   if key == "return":
     mesh.append([])
     index += 1
