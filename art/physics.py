@@ -7,7 +7,7 @@ def rotate(x, y, theta):
   return (x*c - y*s, x*s + y*c)
 
 class Car:
-  mesh = [(0, 30), (15, -10), (-15, -10)]
+  mesh = [(0, 10), (5, -7), (-5, -7)]
   angle = 0
   avel = 0
   pos = (200, 200)
