@@ -8,7 +8,7 @@ class Car:
   vel = (0, 0)
   
   def step(self):
-    pass
+    pos = (pos[0] + vel[0], pos[1] + vel[1])
   
   def draw(self):
     s = sin(self.angle)
@@ -22,10 +22,14 @@ class Car:
       
       line(self.pos[0] + x0, self.pos[1] + y0,
            self.pos[0] + x1, self.pos[1] + y1)
-      
+  
+  def applyImpulse(self, x, y):
+    vel = (vel[0] + x, vel[1] + y)
       
 car = Car()
-car.draw()
+while True:
+  car.draw()
+  car.step()
 
 
   
