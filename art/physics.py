@@ -26,7 +26,7 @@ class Car:
     
     self.angle = (self.angle + pi) % (2 * pi) - pi
     
-    #self.collide()
+    self.collide()
   
   def draw(self):
     color("red")
