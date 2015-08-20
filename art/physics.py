@@ -36,9 +36,11 @@ class Car:
        
     for i in range(0, 3):
       a = rotate(self.mesh[i%3 - 1][0],
-                 self.mesh[i%3 - 1][1])
+                 self.mesh[i%3 - 1][1],
+                 self.angle)
       b = rotate(self.mesh[(i+1)%3 - 1][0],
-                 self.mesh[(i+1)%3 - 1][1])
+                 self.mesh[(i+1)%3 - 1][1],
+                 self.angle)
       
       line(self.pos[0] + a[0], self.pos[1] + a[1],
            self.pos[0] + b[0], self.pos[1] + b[1])
