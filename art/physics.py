@@ -25,7 +25,6 @@ class Car:
     self.avel = self.avel * self.friction * 0.95
     
     self.angle = (self.angle + pi) % (2 * pi) - pi
-    print(self.angle)
     
     #self.collide()
   
