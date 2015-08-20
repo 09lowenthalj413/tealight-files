@@ -1,11 +1,12 @@
 from tealight.art import *
 from math import *
+from random import *
 
 def star(x, y, w, h, spines):
   angle = 0
   for i in range(0, spines):
-    x0 = x + (w * cos(angle))
-    y0 = y + (h * sin(angle))
+    x0 = x + (w * cos(angle)) + randint(0, 10)
+    y0 = y + (h * sin(angle)) + randint(0, 10)
     line(x, y, x0, y0)
     angle = angle + (2 * pi / spines)
 
