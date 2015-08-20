@@ -20,8 +20,8 @@ class Car:
       x1 = self.mesh[(i+1)%3 - 1][0]
       y1 = self.mesh[(i+1)%3 - 1][1]
       
-      line(pos[0] + x0, pos[1] + y0,
-           pos[0] + x1, pos[1] + y1)
+      line(self.pos[0] + x0, self.pos[1] + y0,
+           self.pos[0] + x1, self.pos[1] + y1)
       
       
 car = Car()
