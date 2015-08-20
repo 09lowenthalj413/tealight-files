@@ -1,6 +1,11 @@
 from tealight.art import *
 from math import *
 
+def rotate(x, y, theta):
+  c = cos(theta)
+  s = sin(theta)
+  return (x*c - y*s, x*s, + y*c)
+
 class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
   angle = 0
@@ -28,22 +33,15 @@ class Car:
   
   def draw(self):
     color("red")
-    
-    s = sin(self.angle)
-    c = cos(self.angle)
-    
+       
     for i in range(0, 3):
-      x0 = (self.mesh[i%3 - 1][0] * c -
-            self.mesh[i%3 - 1][1] * s)
-      y0 = (self.mesh[i%3 - 1][0] * s +
-            self.mesh[i%3 - 1][1] * c)
-      x1 = (self.mesh[(i+1)%3 - 1][0] * c -
-            self.mesh[(i+1)%3 - 1][1] * s)
-      y1 = (self.mesh[(i+1)%3 - 1][0] * s +
-            self.mesh[(i+1)%3 - 1][1] * c)
+      a = rotate(self.mesh[i%3 - 1][0],
+                 self.mesh[i%3 - 1][1])
+      b = rotate(self.mesh[(i+1)%3 - 1][0],
+                 self.mesh[(i+1)%3 - 1][1])
       
-      line(self.pos[0] + x0, self.pos[1] + y0,
-           self.pos[0] + x1, self.pos[1] + y1)
+      line(self.pos[0] + a[0], self.pos[1] + a[1],
+           self.pos[0] + b[0], self.pos[1] + b[1])
   
   def applyImpulse(self, x, y, a=0):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
