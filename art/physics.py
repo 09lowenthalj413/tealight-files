@@ -1,1 +1,3 @@
-image(0, 0, "background")
+from tealight.art import *
+
+background("track")
