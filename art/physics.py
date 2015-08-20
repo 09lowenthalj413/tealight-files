@@ -61,7 +61,7 @@ class Car:
     self.vel = (self.vel[0] + x, self.vel[1] + y)
     self.avel += a
     
-  def __init__(self, racetrack):
-    self.track = racetrack
+  #def __init__(self, racetrack):
+  #  self.track = racetrack
 
   
