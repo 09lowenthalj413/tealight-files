@@ -4,7 +4,7 @@ from math import *
 class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
   angle = 0
-  pos = (100, 100)
+  pos = (200, 200)
   vel = (0, 1)
   track = None
   
