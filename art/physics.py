@@ -17,10 +17,15 @@ def rotate(x, y, theta):
 
 class Car:
   mesh = [(0, 10), (5, -7), (-5, -7)]
+  
   angle = 0
   avel = 0
+  aacc = 0
+  
   pos = (200, 200)
   vel = (0, 0)
+  acc = (0, 0)
+  
   friction = 0.99
   track = None
   
@@ -28,6 +33,10 @@ class Car:
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
     self.angle += self.avel
+    
+    self.vel = (self.vel[0] + self.acc[0],
+                self.vel[1] + self.acc[1])
+    self.avel += self.aacc
     
     self.collide()
     
