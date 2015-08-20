@@ -20,6 +20,8 @@ class Car:
     print(res)
   
   def draw(self):
+    color("red")
+    
     s = sin(self.angle)
     c = cos(self.angle)
     
