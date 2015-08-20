@@ -4,20 +4,24 @@ from math import *
 class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
   angle = 0
+  avel = 0
   pos = (200, 200)
-  vel = (0, 1)
+  vel = (0, 0)
+  friction = 0.5
   track = None
   
   def step(self):
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
+    angle += avel
+    
+    vel = (vel[0] * friction, vel[1] * friction)
+    avel = avel * friction
     
     res = [False, False, False]
     for i in range(0, 3):
       res[i] = self.track.check(self.pos[0] + self.mesh[i][0],
                                 self.pos[1] + self.mesh[i][1])
-      
-    print(res)
   
   def draw(self):
     color("red")
@@ -34,8 +38,9 @@ class Car:
       line(self.pos[0] + x0, self.pos[1] + y0,
            self.pos[0] + x1, self.pos[1] + y1)
   
-  def applyImpulse(self, x, y):
+  def applyImpulse(self, x, y, a):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
+    self.avel += a
     
   def __init__(self, racetrack):
     self.track = racetrack
