@@ -1,1 +1,1 @@
-background("track")
+image(0, 0, "background")
