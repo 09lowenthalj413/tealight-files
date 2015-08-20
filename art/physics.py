@@ -1,5 +1,6 @@
 from tealight.art import *
 from math import *
+from time import sleep
 
 class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
