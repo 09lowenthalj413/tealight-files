@@ -12,7 +12,7 @@ class Car:
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
     
-    res = [false, false, false]
+    res = [False, False, False]
     for i in range(0, 3):
       res[i] = self.track.check(self.mesh[i][0],
                                 self.mesh[i][1])
