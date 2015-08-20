@@ -7,18 +7,18 @@ class Car:
   pos = (0, 0)
   vel = (0, 0)
   
-  def step():
+  def step(self):
     pass
   
-  def draw():
-    s = sin(angle)
-    c = cos(angle)
+  def draw(self):
+    s = sin(self.angle)
+    c = cos(self.angle)
     
     for i in range(0, 3):
-      x0 = mesh[i%3 - 1][0]
-      y0 = mesh[i%3 - 1][1]
-      x1 = mesh[(i+1)%3 - 1][0]
-      y1 = mesh[(i+1)%3 - 1][1]
+      x0 = self.mesh[i%3 - 1][0]
+      y0 = self.mesh[i%3 - 1][1]
+      x1 = self.mesh[(i+1)%3 - 1][0]
+      y1 = self.mesh[(i+1)%3 - 1][1]
       
       line(x0, y0, x1, y1)
       
