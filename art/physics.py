@@ -1,1 +1,1 @@
-print "A new file!"
+import github.dhs11.art.map
