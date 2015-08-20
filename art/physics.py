@@ -1,6 +1,5 @@
 from tealight.art import *
 from math import *
-from time import sleep
 
 class Car:
   mesh = [(0, 60), (30, -20), (-30, -20)]
@@ -29,7 +28,7 @@ class Car:
     self.vel = (self.vel[0] + x, self.vel[1] + y)
       
 car = Car()
-while True:
+def handle_frame():
   color("white")
   box(0, 0, screen_width, screen_height)
   
