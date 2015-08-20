@@ -6,17 +6,18 @@ mesh.append([])
 
 def handle_mousedown(x, y):
   print(mesh)
-  
   mesh[index].append((x, y))
-  
-  color("white")
-  box(0, 0, screen_width, screen_height)
-  
-  color("red")
-  fill_polygon(mesh[index])
   
 def handle_keydown(key):
   global index
   if key == "return":
     mesh.append([])
     index += 1
+    
+def handle_frame():
+  color("white")
+  box(0, 0, screen_width, screen_height)
+  color("red")
+  
+  for poly in mesh:
+    fill_polygon(poly)
