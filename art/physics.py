@@ -1,5 +1,6 @@
 from tealight.art import *
 from math import *
+from github.jmlowenthal.art.stars import *
 
 def rotate(x, y, theta):
   c = cos(theta)
@@ -51,7 +52,7 @@ class Car:
       if (self.track.check(self.pos[0] + self.mesh[i][0],
                            self.pos[1] + self.mesh[i][1])):
         self.vel = (0, 0)
-        circle(self.pos[0], self.pos[1], 100)
+        star(self.pos[0], self.pos[1], "red", 100, 100, 32)
       
     
   def __init__(self, racetrack):
