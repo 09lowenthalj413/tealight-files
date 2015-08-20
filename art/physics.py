@@ -20,24 +20,16 @@ class Car:
   
   angle = 0
   avel = 0
-  aacc = 0
   
-  pos = (200, 250)
+  pos = (200, 200)
   vel = (0, 0)
-  acc = (0, 0)
   
   friction = 0.99
   track = None
   
   def step(self):
-    self.vel = (self.vel[0] + self.acc[0],
-                self.vel[1] + self.acc[1])
-    
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
-    
-    
-    self.avel += self.aacc
     self.angle += self.avel
     
     self.collide()
@@ -71,8 +63,7 @@ class Car:
       if (self.track.check(self.pos[0] + self.mesh[i][0],
                            self.pos[1] + self.mesh[i][1])):
         self.vel = (0, 0)
-        self.acc = (0, 0)
-        #star(self.pos[0], self.pos[1], 50, 50, 32)
+        star(self.pos[0], self.pos[1], 50, 50, 32)
       
     
   def __init__(self, racetrack):
