@@ -23,7 +23,7 @@ class Car:
   angle = 0
   avel = 0
   
-  pos = (200, 200)
+  pos = checkpoints[0]
   vel = (0, 0)
   
   friction = 0.99
