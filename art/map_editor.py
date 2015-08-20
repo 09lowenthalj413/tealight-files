@@ -1,7 +1,9 @@
 from tealight.art import *
 
-mesh = [][]
+mesh = []
 index = 0
+mesh.append([])
+
 def handle_mousedown(x, y):
   mesh[index].append((x, y))
   
@@ -10,3 +12,8 @@ def handle_mousedown(x, y):
   
   color("red")
   fill_polygon(mesh[index])
+  
+def handle_keydown(key):
+  if key == "enter":
+    mesh.append([])
+    index += 1
