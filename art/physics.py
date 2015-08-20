@@ -30,14 +30,14 @@ class Car:
   track = None
   
   def step(self):
-    self.avel += self.aacc
-    
     self.vel = (self.vel[0] + self.acc[0],
                 self.vel[1] + self.acc[1])
     
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
     
+    
+    self.avel += self.aacc
     self.angle += self.avel
     
     self.collide()
