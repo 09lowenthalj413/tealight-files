@@ -17,7 +17,7 @@ class Car:
       res[i] = self.track.check(self.mesh[i][0],
                                 self.mesh[i][1])
       
-    #print(res)
+    print(res)
   
   def draw(self):
     color("red")
