@@ -12,9 +12,7 @@ def handle_keydown(key):
   global index
   if key == "return":
     if mesh[index] == []:
-      print(mesh)
-      exit()
-    
+      print(mesh)    
     mesh.append([])
     index += 1
     
