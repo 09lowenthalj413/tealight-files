@@ -46,6 +46,9 @@ class Car:
   
   def draw(self):
     color("red")
+    
+    text(self.pos[0], self.pos[1],
+         "C" + str(self.cc + 1) + " L" + str(self.laps))
        
     for i in range(0, 3):
       a = rotate(self.mesh[i%3 - 1][0],
