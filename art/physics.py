@@ -7,7 +7,7 @@ class Car:
   avel = 0
   pos = (200, 200)
   vel = (0, 0)
-  friction = 0.95
+  friction = 0.99
   track = None
   
   def step(self):
