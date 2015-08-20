@@ -1,12 +1,8 @@
 from tealight.art import *
 from math import *
 
-def star(x, y, c, w, h, spines):
-  
-  color(c)
-  
+def star(x, y, w, h, spines):
   angle = 0
-  
   for i in range(0, spines):
     x0 = x + (w * cos(angle))
     y0 = y + (h * sin(angle))
