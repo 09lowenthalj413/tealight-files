@@ -13,10 +13,11 @@ class Car:
   def step(self):
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
-    angle += avel
+    self.angle += self.avel
     
-    vel = (vel[0] * friction, vel[1] * friction)
-    avel = avel * friction
+    self.vel = (self.vel[0] * self.friction,
+                self.vel[1] * self.friction)
+    self.avel = self.avel * self.friction
     
     res = [False, False, False]
     for i in range(0, 3):
