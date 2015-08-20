@@ -19,6 +19,7 @@ def handle_keydown(key):
     index += 1
     
 def handle_frame():
+  global mesh
   color("white")
   box(0, 0, screen_width, screen_height)
   color("red")
