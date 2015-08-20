@@ -34,8 +34,8 @@ class Car:
     
     self.collide()
     
-    self.vel = (self.vel[0] * self.friction,
-                self.vel[1] * self.friction)
+    #self.vel = (self.vel[0] * self.friction,
+    #            self.vel[1] * self.friction)
     self.avel = self.avel * self.friction * 0.95
     
     self.angle = (self.angle + pi) % (2 * pi) - pi
