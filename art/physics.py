@@ -22,7 +22,7 @@ class Car:
     
     self.vel = (self.vel[0] * self.friction,
                 self.vel[1] * self.friction)
-    self.avel = self.avel * self.friction * 0.8
+    self.avel = self.avel * self.friction * 0.9
     
     self.angle = (self.angle + 2 * pi) % (4 * pi) + (2 * pi)
     
