@@ -35,8 +35,6 @@ def handle_frame():
   color("blue")
   car.draw()
   car.step()
-  
-  sleep(1)
 
 
   
