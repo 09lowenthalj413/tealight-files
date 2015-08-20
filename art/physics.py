@@ -33,6 +33,9 @@ class Car:
   
   def draw(self):
     color("red")
+    
+    c = cos(self.angle)
+    s = sin(self.angle)
        
     for i in range(0, 3):
       a = rotate(self.mesh[i%3 - 1][0],
