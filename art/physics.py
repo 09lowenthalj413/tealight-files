@@ -1,6 +1,17 @@
 from tealight.art import *
 from math import *
-from github.jmlowenthal.art.stars import *
+
+def star(x, y, c, w, h, spines):
+  
+  color(c)
+  
+  angle = 0
+  
+  for i in range(0, spines):
+    x0 = x + (w * cos(angle))
+    y0 = y + (h * sin(angle))
+    line(x, y, x0, y0)
+    angle = angle + (2 * pi / spines)
 
 def rotate(x, y, theta):
   c = cos(theta)
