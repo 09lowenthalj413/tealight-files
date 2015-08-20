@@ -1,11 +1,12 @@
 from tealight.art import *
 
-poly = []
+mesh = [[,]]
+index = 0
 def handle_mousedown(x, y):
-  poly.append((x, y))
+  mesh[index].append((x, y))
   
   color("white")
   box(0, 0, screen_width, screen_height)
   
   color("red")
-  fill_polygon(poly)
+  fill_polygon(mesh[index])
