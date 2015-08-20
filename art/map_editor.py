@@ -11,6 +11,10 @@ def handle_mousedown(x, y):
 def handle_keydown(key):
   global index
   if key == "return":
+    if mesh[index] == []:
+      print(mesh)
+      exit()
+    
     mesh.append([])
     index += 1
     
