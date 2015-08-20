@@ -63,7 +63,7 @@ class Car:
     for i in range(0, 3):
       check_check(self.pos[0], self.pos[1])
       if (check_track(self.pos[0] + self.mesh[i][0],
-                self.pos[1] + self.mesh[i][1])):
+                      self.pos[1] + self.mesh[i][1])):
         #self.vel = (0, 0)
         self.vel = (-self.vel[0], -self.vel[1])
 
