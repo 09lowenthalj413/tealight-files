@@ -2,7 +2,7 @@ from tealight.art import *
 from math import *
 
 class Car:
-  mesh = [(0, 5), (3, -2), (-3, -2)]
+  mesh = [(0, 50), (30, -20), (-30, -20)]
   angle = 0
   pos = (0, 0)
   vel = (0, 0)
