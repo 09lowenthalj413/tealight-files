@@ -28,6 +28,9 @@ class Car:
   
   friction = 0.99
   
+  cc = 0
+  laps = 0
+  
   def step(self):
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
@@ -61,7 +64,7 @@ class Car:
     
   def collide(self):
     for i in range(0, 3):
-      check_check(self.pos[0], self.pos[1])
+      check_check(self.pos[0], self.pos[1], self)
       if (check_track(self.pos[0] + self.mesh[i][0],
                       self.pos[1] + self.mesh[i][1])):
         #self.vel = (0, 0)
