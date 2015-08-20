@@ -6,10 +6,14 @@ class Car:
   angle = 0
   pos = (100, 100)
   vel = (0, 1)
+  track = None
   
   def step(self):
     self.pos = (self.pos[0] + self.vel[0],
                 self.pos[1] + self.vel[1])
+    
+    for i in range(0, 3):
+      self.track.check(self.mesh[i][0], self.mesh[i][1])
   
   def draw(self):
     s = sin(self.angle)
@@ -26,15 +30,8 @@ class Car:
   
   def applyImpulse(self, x, y):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
-      
-car = Car()
-def handle_frame():
-  color("white")
-  box(0, 0, screen_width, screen_height)
-  
-  color("blue")
-  car.draw()
-  car.step()
-
+    
+  def __init__(racetrack):
+    self.track = racetrack
 
   
