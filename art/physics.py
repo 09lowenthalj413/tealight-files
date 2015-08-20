@@ -59,6 +59,7 @@ class Car:
     
   def collide(self):
     for i in range(0, 3):
+      check_check(self.pos[0], self.pos[1])
       if (check(self.pos[0] + self.mesh[i][0],
                 self.pos[1] + self.mesh[i][1])):
         #self.vel = (0, 0)
