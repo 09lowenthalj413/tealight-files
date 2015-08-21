@@ -26,7 +26,7 @@ class Car:
   pos = checkpoints[0]
   vel = (0, 0)
   
-  friction = 0.999
+  friction = 0.99999
   
   cc = 0
   laps = 0
