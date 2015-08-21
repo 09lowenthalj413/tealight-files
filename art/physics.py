@@ -40,7 +40,7 @@ class Car:
     
     # f @ v^2
     # f = kv^2
-    self.vel = (self.vel[0] * (1 - (self.friction * self.vel[0]**2)),
+    self.vel = (self.vel[0] * self.friction,
                 self.vel[1] * self.friction)
     self.avel = self.avel * self.friction * 0.95
     
