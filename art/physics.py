@@ -44,9 +44,7 @@ class Car:
     
     self.angle = (self.angle + pi) % (2 * pi) - pi
   
-  def draw(self):
-    color("blue")
-    
+  def draw(self):    
     text(self.pos[0], self.pos[1],
          "C" + str(self.cc + 1) + " L" + str(self.laps))
        
