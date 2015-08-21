@@ -67,7 +67,12 @@ class Car:
     step = (back[0] / flames, back[1] / flames)
     
     for i in range(flames):
-      line(
+      pos = (self.pos[0] + self.mesh[1][0] + i * step[0],
+             self.pos[1] + self.mesh[1][1] + i * step[1])
+      line(pos[0], pos[1],
+           pos[0] + back[1],
+           pos[1] + back[0])
+           
   
   def applyImpulse(self, x, y, a=0):
     self.vel = (self.vel[0] + x, self.vel[1] + y)
