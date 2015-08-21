@@ -38,8 +38,6 @@ class Car:
     
     self.collide()
     
-    # f @ v^2
-    # f = kv^2
     self.vel = (self.vel[0] * self.friction,
                 self.vel[1] * self.friction)
     self.avel = self.avel * self.friction * 0.95
