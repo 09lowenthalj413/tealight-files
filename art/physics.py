@@ -65,12 +65,12 @@ class Car:
             self.mesh[1][1] - self.mesh[2][1])
     flames = 10
     step = (back[0] / flames, back[1] / flames)
+      back = rotate(back[0], back[1], self.angle)
     
     for i in range(flames):
       pos = (self.mesh[1][0] + step[0] * i,
              self.mesh[1][1] + step[1] * i)
       pos = rotate(pos[0], pos[1], self.angle)
-      back = rotate(back[0], back[1], self.angle)
       line(pos[0], pos[1],
            pos[0] - back[1]
            * randint(0, int(self.vel[0]**2 + self.vel[1]**2)),
