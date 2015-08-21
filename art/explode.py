@@ -1,1 +1,2 @@
-print "A new file!"
+def explosion(x, y):
+  
