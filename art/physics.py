@@ -61,8 +61,8 @@ class Car:
       line(self.pos[0] + a[0], self.pos[1] + a[1],
            self.pos[0] + b[0], self.pos[1] + b[1])
       
-    back = (self.mesh[1][0] - self.mesh[2][0],
-            self.mesh[1][1] - self.mesh[2][1])
+    back = (self.mesh[2][0] - self.mesh[1][0],
+            self.mesh[2][1] - self.mesh[1][1])
     flames = 10
     step = (back[0] / flames, back[1] / flames)
     back = rotate(back[0], back[1], self.angle)
