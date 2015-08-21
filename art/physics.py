@@ -70,8 +70,8 @@ class Car:
       pos = (self.pos[0] + self.mesh[1][0] + i * step[0],
              self.pos[1] + self.mesh[1][1] + i * step[1])
       line(pos[0], pos[1],
-           pos[0] - back[1],
-           pos[1] + back[0])
+           pos[0] - back[1] * randint(10, 20),
+           pos[1] + back[0] * randint(10, 20))
            
   
   def applyImpulse(self, x, y, a=0):
