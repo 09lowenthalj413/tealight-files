@@ -45,7 +45,7 @@ class Car:
     self.angle = (self.angle + pi) % (2 * pi) - pi
   
   def draw(self):
-    color("red")
+    color("blue")
     
     text(self.pos[0], self.pos[1],
          "C" + str(self.cc + 1) + " L" + str(self.laps))
@@ -67,6 +67,7 @@ class Car:
     step = (back[0] / flames, back[1] / flames)
     back = rotate(back[0], back[1], self.angle)
     
+    color("red")
     for i in range(flames):
       pos = (self.mesh[1][0] + step[0] * i,
              self.mesh[1][1] + step[1] * i)
