@@ -74,9 +74,9 @@ class Car:
              pos[1] + self.pos[1])
       line(pos[0], pos[1],
            pos[0] - back[1]
-           * randint(0, int((self.vel[0]**2 + self.vel[1]**2))),
+           * randint(0, int((self.vel[0]**2 + self.vel[1]**2) / 10)),
            pos[1] + back[0]
-           * randint(0, int((self.vel[0]**2 + self.vel[1]**2))))
+           * randint(0, int((self.vel[0]**2 + self.vel[1]**2) / 10)))
            
   
   def applyImpulse(self, x, y, a=0):
