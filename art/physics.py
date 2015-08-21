@@ -71,9 +71,10 @@ class Car:
       if (check_track(self.pos[0] + self.mesh[i][0],
                       self.pos[1] + self.mesh[i][1])):
         #self.vel = (0, 0)
-        line(self.mesh[i][0], self.mesh[i][1],
-             self.mesh[i][0] + randint(-50, 50),
-             self.mesh[i][1] + randint(-50, 50))
+        line(self.pos[0] + self.mesh[i][0],
+             self.pos[1] + self.mesh[i][1],
+             self.pos[0] + self.mesh[i][0] + randint(-50, 50),
+             self.pos[1] + self.mesh[i][1] + randint(-50, 50))
         self.vel = (-self.vel[0] * 0.5, -self.vel[1] * 0.5)
 
   
